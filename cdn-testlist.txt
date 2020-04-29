@@ -5,10 +5,10 @@ ad.doubleclick.net
 app-cdn.2q10.com
 app-measurement.com
 cdn.globalsigncdn.com
-cdn.jsdelivr.net
 cnc.ef-cdn.com
 d-cache.microad-cn.com
 dnl-11.geo.kaspersky.com
+dsany.sgnic.sg
 edge.yunjiasu.com
 gateway.nyaacat.com
 googleadservices.com
@@ -16,6 +16,7 @@ googletagmanager.com
 issuecdn.baidupcs.com.wsdvs.com
 itunes-cdn.itunes-apple.com.akadns.net
 netease.ugcvideoss.ourdvs.com
+oneplus.com
 opthw.xdwscache.speedcdns.com
 pagead2.googlesyndication.com
 r1.res.outlook.com
@@ -42,3 +43,4 @@ www.sunrtb.com
 www.yangfd.com
 www.youngfunding.co.uk
 www.cz88.net
+zoom.us

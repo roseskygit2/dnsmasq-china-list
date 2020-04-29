@@ -76,7 +76,7 @@ class ChinaListVerify(object):
                 answers = response.find_rrset(response.additional, dns.name.from_text(domain), dns.rdataclass.IN, dns.rdatatype.A)
             except KeyError:
                 pass
-        
+
         if not answers:
             answers = dns.resolver.query(domain, 'A')
 
@@ -99,8 +99,15 @@ class ChinaListVerify(object):
     def get_ns_for_tld(self, tld):
         if tld not in self.tld_ns:
             answers = self.resolve(tld + ".", "NS")
-            ips = self.resolve(answers[0].to_text())
-            self.tld_ns[tld] = ips[0].to_text()
+            for answer in answers:
+                try:
+                    ips = self.resolve(answer.to_text())
+                    self.tld_ns[tld] = ips[0].to_text()
+                    break
+                except dns.resolver.NXDOMAIN:
+                    pass
+            else:
+                raise
 
         return self.tld_ns[tld]
 
@@ -128,7 +135,7 @@ class ChinaListVerify(object):
         except:
             raise
             pass
-        else:   
+        else:
             for rdata in response.authority[0]:
                 nameserver = rdata.to_text()
                 if tldextract.extract(nameserver).registered_domain:
@@ -251,9 +258,14 @@ if __name__ == "__main__":
                         help='Show green results.')
     parser.add_argument('-d', '--domain', nargs='?',
                         help='Verify a domain instead of checking a list. Will ignore the other options.')
+    parser.add_argument('-D', '--dns', nargs='?',
+                        help='Specify a DNS server to use instead of the system default one.')
 
     config = parser.parse_args()
     v = ChinaListVerify()
+
+    if config.dns:
+        dns.resolver.get_default_resolver().nameservers=[config.dns]
 
     if config.domain:
         v.check_domain_verbose(config.domain, show_green=config.verbose)

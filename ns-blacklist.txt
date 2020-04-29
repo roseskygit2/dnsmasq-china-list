@@ -37,3 +37,11 @@ status: NXDOMAIN
 .gandi.net.
 .worldnic.com.
 .ftchinese.com.
+.name.com.
+.1-api.org.
+.parkpage.foundationapi.com.
+.expdns.net.
+.domains-hold.com.
+.dnsowl.com.
+.dynadot.com.
+.webnic.cc.
