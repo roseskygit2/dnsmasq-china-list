@@ -45,3 +45,5 @@ status: NXDOMAIN
 .dnsowl.com.
 .dynadot.com.
 .webnic.cc.
+.exmetis.com.
+.dnsever.com.

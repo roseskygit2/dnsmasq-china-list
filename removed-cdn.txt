@@ -4,7 +4,6 @@ ad.mediaplex.com
 ajax.loli.net
 altfarm.mediaplex.com
 assets.adobedtm.com
-assets.analog.com
 assets-ssl.xbox.com
 avatarread-ssl.xboxlive.com
 avatarread.xboxlive.com
@@ -75,6 +74,7 @@ mediaexp-programming.xboxlive.com
 mktplassets-ssl.xbox.com
 msg.xboxlive.com
 nxeassets.xbox.com
+platform.linkedin.com
 plus.djicdn.com
 plus.dji.com
 profile.xboxlive.com
@@ -82,6 +82,7 @@ res.office365.com
 res.outlook.com
 script.image-gmkt.com
 sekong.cn.com
+settings.crashlytics.com
 settings.xboxlive.com
 sina.com.hk
 speedtest.xboxlive.com
@@ -91,13 +92,16 @@ store-images.s-microsoft.com
 tiles.xbox.com
 titlestorage.xboxlive.com
 topics-cdn.dell.com
+tse1.mm.bing.net
+tse2.mm.bing.net
+tse3.mm.bing.net
+tse4.mm.bing.net
 u.djicdn.com
 userstats.xboxlive.com
 v2ex.com
 web-service.halo.xbox.com
 web-service-ssl.halo.xbox.com
 www1-cdn.dell.com
-www.analog.com
 www.ikea.com
 www.nvidia.com
 www.renren.com.cdngc.net
